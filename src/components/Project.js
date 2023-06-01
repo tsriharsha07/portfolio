@@ -10,7 +10,7 @@ const Project = () => {
             description: "It a simple blog website which I have created while learning tailwind css. I have also search functionality",
             tech: "React Js, Tailwind, Material Ui",
             code: "https://github.com/tsriharsha07/blog-website",
-            demo: "https://github.com/tsriharsha07/blog-website",
+            demo: "https://blog-website-4fv4zhnuu-tsriharsha07-gmailcom.vercel.app/",
             img: blog
         },
         {
