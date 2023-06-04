@@ -2,6 +2,7 @@ import React from 'react';
 import booking from '../assets/moviebooking.png';
 import blog from '../assets/blog.png';
 import shopify from '../assets/shopify.png'
+import promptopia from '../assets/promptopia.png'
 
 const Project = () => {
     const links = [
@@ -28,6 +29,14 @@ const Project = () => {
             code: "https://github.com/tsriharsha07/moviebooking",
             demo: "https://github.com/tsriharsha07/moviebooking",
             img: booking
+        },
+        {
+            title:"Promptopia",
+            description:"Promptopia is an open source AI prompting tool for modern world to discover, create and share creative prompts",
+            tech:"Next Js Tailwind NextAuth",
+            code:"https://github.com/tsriharsha07/promptopia",
+            demo:'https://promptopia-kappa-topaz.vercel.app/',
+            img:promptopia
         }
     ]
 
