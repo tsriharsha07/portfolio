@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div name="contact" className='bg-gradient-to-r from-slate-100 to-zinc-200 h-[100%] w-full pt-16'>
+        <div name="contact" className='bg-[#fafdff] h-[100%] w-full pt-16'>
             <div className='flex flex-col jusify-center py-4 mx-10'>
                 <div className='pb-4'>
                     <p className='text-4xl font-semibold inline '>Hire Me</p>

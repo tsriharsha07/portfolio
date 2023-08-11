@@ -1,9 +1,10 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import { Link } from 'react-scroll';
 import {FaTimes,FaBars} from 'react-icons/fa'
 
 const Navbar = () => {
     const [nav, setNav] = useState();
+  const [shadow, setShadow] = useState(false);
   const links = [
     {
       id: 1,
@@ -26,8 +27,23 @@ const Navbar = () => {
       link: "contact",
     },
   ];
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <div className='flex justify-between h-16 w-full fixed bg-gradient-to-r from-slate-100 to-zinc-200 shadow-lg '>
+    <div className={
+      shadow
+          ?'flex justify-between h-20 w-full fixed bg-[#fafdff] shadow-lg z-[100]'
+          : "flex justify-between h-20 w-full fixed bg-[#fafdff] z-[100]"
+    }>
       <div className='ml-7 my-auto'>
         <p className='text-3xl font-mono cursor-pointer ml-2 '>SRIHARSHA</p>
       </div>

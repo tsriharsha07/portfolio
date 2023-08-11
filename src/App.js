@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className='font-mono'>
+    <div className='font-[Proxima Nova]'>
       <Navbar/>
       <Home/>
       <About/>
